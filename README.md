@@ -1,16 +1,84 @@
-# React + Vite
+# ⊞ KanbanBoard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ekip tabanlı, gerçek zamanlı proje yönetim uygulaması.
 
-Currently, two official plugins are available:
+🔗 **Canlı Demo:** [project-management-app-vert-five.vercel.app](https://project-management-app-vert-five.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 Proje Amacı
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Yazılım ekiplerinin görevlerini Kanban yöntemiyle takip etmesini sağlamak. Birden fazla kullanıcı aynı board üzerinde gerçek zamanlı çalışabilir, ticket'lara kişi atayabilir, Figma tasarım ve GitHub PR linklerini ekleyebilir.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Versiyon | Kullanım |
+|-----------|----------|----------|
+| React | 18 | Arayüz |
+| Vite | 8 | Build aracı |
+| Firebase Firestore | 11 | Gerçek zamanlı veritabanı |
+| Firebase Auth | 11 | Google ile giriş |
+| Vercel | — | Deployment |
+
+---
+
+## 📦 Bağımlılıklar
+
+```json
+"dependencies": {
+  "firebase": "^11.x",
+  "react": "^18.x",
+  "react-dom": "^18.x"
+},
+"devDependencies": {
+  "@vitejs/plugin-react": "^6.x",
+  "vite": "^8.x"
+}
+```
+
+---
+
+## ⚙️ Kurulum
+
+```bash
+# Repoyu klonla
+git clone https://github.com/kullanici-adi/kanban-app.git
+cd kanban-app
+
+# Bağımlılıkları yükle
+npm install
+
+# .env dosyası oluştur
+cp .env.example .env
+# Firebase değerlerini .env'e gir
+
+# Geliştirme sunucusunu başlat
+npm run dev
+```
+
+`.env` içeriği:
+
+```env
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+```
+
+---
+
+## ✨ Özellikler
+
+- Google ile giriş
+- Gerçek zamanlı senkronizasyon
+- Çoklu proje desteği
+- Sürükle & bırak ticket yönetimi
+- Figma, canlı site ve GitHub PR linkleri
+- Code Review'a taşırken PR linki zorunluluğu
+- Kişi atama sistemi
+- Proje arşivleme
+- PWA — masaüstüne yüklenebilir
