@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDa6bu_YtWkeL5CyVmHYiHOC21IB4Fy5dk",
-  authDomain: "kanban-app-69ca8.firebaseapp.com",
-  projectId: "kanban-app-69ca8",
-  storageBucket: "kanban-app-69ca8.firebasestorage.app",
-  messagingSenderId: "361691340446",
-  appId: "1:361691340446:web:c78be0a1bb1a9503b4e58f"
+  apiKey:            import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain:        import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId:         import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket:     import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId:             import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
