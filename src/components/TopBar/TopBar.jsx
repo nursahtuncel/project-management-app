@@ -94,20 +94,7 @@ export default function TopBar({ meta, members, user, projectName, completion, s
               </div>
             ))}
           </div>
-          <div className="member-add">
-            <div className="avatar-picker">
-              {AVATARS.map(a => (
-                <span
-                  key={a}
-                  className={`avatar-opt ${newMember.avatar === a ? "selected" : ""}`}
-                  onClick={() => setNewMember(n => ({ ...n, avatar: a }))}
-                >{a}</span>
-              ))}
-            </div>
-            <input className="panel-input" placeholder="İsim" value={newMember.name} onChange={e => setNewMember(n => ({ ...n, name: e.target.value }))} />
-            <input className="panel-input" placeholder="Rol (ör: Developer)" value={newMember.role} onChange={e => setNewMember(n => ({ ...n, role: e.target.value }))} />
-            <button className="btn-add-member" onClick={handleAddMember}>+ Üye Ekle</button>
-          </div>
+     
         </div>
       )}
 
