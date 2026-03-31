@@ -1,0 +1,87 @@
+.add-card-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #dfe1e6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.add-card-input {
+  width: 100%;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  outline: none;
+  font-family: inherit;
+  color: #2d3748;
+  transition: border-color 0.15s;
+}
+.add-card-input:focus { border-color: #6b46c1; }
+
+.add-card-select {
+  width: 100%;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  outline: none;
+  font-family: inherit;
+  color: #2d3748;
+  background: #fff;
+  cursor: pointer;
+}
+.add-card-select:focus { border-color: #6b46c1; }
+
+.add-card-priorities {
+  display: flex;
+  gap: 5px;
+}
+
+.priority-btn {
+  flex: 1;
+  padding: 5px 2px;
+  border: 1.5px solid;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.add-card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-create {
+  flex: 1;
+  background: #6b46c1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+.btn-create:hover { background: #553c9a; }
+
+.btn-cancel {
+  background: #f4f5f7;
+  color: #42526e;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+}
+.btn-cancel:hover { background: #dfe1e6; }

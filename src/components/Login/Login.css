@@ -1,0 +1,64 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.2);
+  width: 360px;
+  animation: popIn 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+
+@keyframes popIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+.login-logo {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.login-card h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 6px;
+}
+
+.login-card p {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 32px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2d3748;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.google-btn:hover {
+  border-color: #6b46c1;
+  background: #faf5ff;
+  box-shadow: 0 4px 12px rgba(107,70,193,0.15);
+}

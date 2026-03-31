@@ -1,0 +1,20 @@
+.board-wrapper {
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+  color: #2d3748;
+}
+
+.board {
+  display: flex;
+  gap: 14px;
+  padding: 16px 18px;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 180px);
+}
+
+.board::-webkit-scrollbar { height: 6px; }
+.board::-webkit-scrollbar-thumb { background: #c1c7d0; border-radius: 3px; }

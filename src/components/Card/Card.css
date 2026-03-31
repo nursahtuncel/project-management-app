@@ -1,0 +1,182 @@
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  border: 1px solid #e8eaed;
+  transition: box-shadow 0.2s, transform 0.15s;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+.card.is-dragging { opacity: 0.3; transform: scale(0.97); }
+
+.del-btn {
+  position: absolute; top: 8px; right: 8px;
+  background: none; border: none; cursor: pointer;
+  color: #cbd5e0; font-size: 12px;
+  padding: 3px 6px; border-radius: 5px;
+  opacity: 0; transition: opacity 0.15s;
+  font-family: inherit; line-height: 1;
+}
+.card:hover .del-btn { opacity: 1; }
+.del-btn:hover { background: #fff5f5; color: #e53e3e; }
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.card-id {
+  font-size: 11px;
+  font-weight: 700;
+  color: #a0aec0;
+  letter-spacing: 0.4px;
+}
+
+.card-priority {
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.card-title {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #1a202c;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.card-links {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.card-link {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.card-link:hover { opacity: 0.75; }
+.card-link.figma { background: #fdf2ff; color: #7c3aed; }
+.card-link.live  { background: #e6f4ff; color: #1d6fa4; }
+.card-link.pr    { background: #fff0f0; color: #b91c1c; }
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f7f8fa;
+  padding-top: 8px;
+}
+
+.card-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.story-badge {
+  display: inline-flex; align-items: center; gap: 3px;
+  background: #ebf4ff; color: #2b6cb0;
+  font-size: 11px; font-weight: 600;
+  padding: 2px 8px; border-radius: 5px;
+}
+
+.card-comments { font-size: 11px; color: #718096; }
+
+.assignee-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2px 8px 2px 4px;
+  font-size: 11px;
+}
+
+.assignee-name { color: #4a5568; font-weight: 600; }
+
+.unassigned {
+  font-size: 11px;
+  color: #cbd5e0;
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.card-top-right {
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+ 
+  margin-right: 15px;
+}
+
+.card-id {
+  font-size: 11px;
+  font-weight: 700;
+  color: #a0aec0;
+  letter-spacing: 0.4px;
+}
+
+.card-priority {
+  font-size: 11px; 
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+/* Sil butonu artık absolute değil, flow içinde */
+.del-btn {
+
+
+  cursor: pointer;
+  color: #cbd5e0;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  opacity: 2;
+  transition: opacity 0.15s;
+  font-family: inherit;
+  line-height: 1;
+  margin-top: 3px;
+}
+.card:hover .del-btn { opacity: 1; }
+.del-btn:hover { background: #fff5f5; color: #e53e3e; }
+.assignee-chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f3f0ff;
+  border: 1px solid #d6bcfa;
+  border-radius: 20px;
+  padding: 3px 8px 3px 3px;
+  font-size: 11px;
+}
+
+.assignee-name {
+  color: #6b46c1;
+  font-weight: 700;
+  font-size: 11px;
+}
